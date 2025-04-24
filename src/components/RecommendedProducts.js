@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/RecommendedProducts.css'; // Reuse the existing styles
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons
-import Header from './Header';
+
 const RecommendedProducts = () => {
     const products = [
         {
@@ -17,7 +17,6 @@ const RecommendedProducts = () => {
 
     return (
         <div>
-            <Header />
             <div className="recommended-products">
                 <h1>Hi Sam</h1>
                 <p>We think you could benefit from these products...</p>

@@ -6,7 +6,6 @@ import { OtherJumbo1, OtherJumbo2 } from "./otherJumbos";
 import "../../styles/Jumbotron.css";
 import "../../styles/OtherJumbos.css";
 import "../../styles/CreditCardJumbotron.css";
-import Header from "../Header";
 
 function Homepage() {
     const navigate = useNavigate();
@@ -17,7 +16,6 @@ function Homepage() {
 
     return (
         <div>
-            <Header />
             <CreditCardJumbotron />
             <Jumbotron />
             <OtherJumbo1 />
