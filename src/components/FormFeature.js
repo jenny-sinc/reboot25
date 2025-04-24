@@ -29,7 +29,7 @@ const FormFeature = () => {
     const [techLiteracy, setTechLiteracy] = useState(0);
     const navigate = useNavigate();
 
-    const nextStep = () => setStep((prev) => Math.min(prev + 1, 6));
+    const nextStep = () => setStep((prev) => Math.min(prev + 1, 7));
     const prevStep = () => setStep((prev) => Math.max(prev - 1, 1));
 
     const progress = (step / 6) * 100;
@@ -130,13 +130,27 @@ const FormFeature = () => {
                         )}
                         {step === 4 && (
                             <div>
+                                <p>Is there anything specific you'd like to know more about?</p>
+                                <textarea
+                                    className="free-text-area"
+                                    placeholder="Type your response here..."
+                                    rows="5"
+                                    style={{ width: '90%', marginTop: '10px', padding: '10px', borderRadius: '5px', border: '1px solid #ccc' }}
+                                ></textarea>
+                                <br />
+                                <button className="button-secondary" onClick={prevStep}>Back</button>
+                                <button className="button-primary" onClick={nextStep}>Next</button>
+                            </div>
+                        )}
+                        {step === 5 && (
+                            <div>
                                 <p>How would you rate your financial literacy?</p>
                                 {renderStars(financialLiteracy, setFinancialLiteracy)}
                                 <button className="button-secondary" onClick={prevStep}>Back</button>
                                 <button className="button-primary" onClick={nextStep}>Next</button>
                             </div>
                         )}
-                        {step === 5 && (
+                        {step === 6 && (
                             <div>
                                 <p>How would you rate your tech literacy?</p>
                                 {renderStars(techLiteracy, setTechLiteracy)}
@@ -144,7 +158,7 @@ const FormFeature = () => {
                                 <button className="button-primary" onClick={nextStep}>Next</button>
                             </div>
                         )}
-                        {step === 6 && (
+                        {step === 7 && (
                             <div>
                                 <p>Are you ready to see what we have in store?</p>
                                 <button className="button-primary" onClick={() => navigate('/recommended-products')}>Let's Go!</button>
