@@ -1,0 +1,36 @@
+.credit-card-jumbotron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.credit-card {
+    background: linear-gradient(135deg, #6EF27B, #A09FFF);
+    color: white;
+    width: 300px;
+    height: 180px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.credit-card-header {
+    position: relative;
+    top: -10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.credit-card-number {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.credit-card-holder,
+.credit-card-expiry {
+    font-size: 0.9rem;
+}

@@ -1,0 +1,89 @@
+.open-banking {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.open-banking h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.open-banking p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.account-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.account-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.account-item:hover {
+    background-color: #f0f0f0;
+}
+
+.account-item.selected {
+    background-color: #11B67A;
+    color: white;
+    border-color: #11B67A;
+}
+
+.account-name {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.account-number {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-primary {
+    background-color: #11B67A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-primary:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.button-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-secondary:hover {
+    background-color: #e0e0e0;
+}

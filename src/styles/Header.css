@@ -1,0 +1,16 @@
+.header {
+    background-color: #E3EDED;
+    /* Green background */
+    color: #11B67A;
+    /* White text */
+    padding: 20px;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}

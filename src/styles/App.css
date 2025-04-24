@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e3eded;
+  /* Light background */
+  color: #333;
+  /* Dark text for contrast */
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #6EF27B;
+  /* Primary brand color */
+  padding: 20px;
+  color: white;
+}
+
+button {
+  background-color: #FBB368;
+  /* Secondary brand color */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #A09FFF;
+  /* Accent brand color */
+}
+
+a {
+  color: #6EF27B;
+  /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

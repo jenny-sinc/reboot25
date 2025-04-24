@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './styles/App.css';
+import Jumbotron from './components/homepage/Jumbotron';
+import FormFeature from './components/FormFeature';
+import Homepage from './components/homepage/Homepage';
+import RecommendedProducts from './components/RecommendedProducts';
+import OpenBanking from './components/OpenBanking';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={
+            <Homepage />
+          } />
+          <Route path="/form-feature" element={<FormFeature />} />
+          <Route path="/recommended-products" element={<RecommendedProducts />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
